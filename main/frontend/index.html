@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Mode Accessibility Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Focus Mode Accessibility Tool</h1>
+            <p>Transform cluttered webpages into simplified, distraction-free views</p>
+        </header>
+
+        <main>
+            <!-- URL Input Form with Validation -->
+            <section class="input-section" aria-label="URL Input">
+                <form id="url-form" novalidate>
+                    <label for="url-input">Enter webpage URL:</label>
+                    <input 
+                        type="url" 
+                        id="url-input" 
+                        name="url"
+                        placeholder="https://example.com/article" 
+                        required
+                        aria-required="true"
+                        aria-describedby="url-help"
+                        pattern="https?://.+"
+                    >
+                    <small id="url-help" class="help-text">Enter a valid URL starting with http:// or https://</small>
+                    <button type="submit" id="submit-btn">Simplify</button>
+                </form>
+
+                <!-- Demo URL Selector with Pre-vetted URLs -->
+                <div id="demo-urls" class="demo-section">
+                    <label for="demo-selector">Or try a demo URL:</label>
+                    <select id="demo-selector" aria-label="Select a demo URL">
+                        <option value="">Select a demo...</option>
+                        <option value="https://httpbin.org/html">HTTPBin - Moby Dick Excerpt</option>
+                        <option value="https://text.npr.org">NPR Text-Only News</option>
+                        <option value="https://www.gutenberg.org/files/1342/1342-h/1342-h.htm">Pride and Prejudice (Project Gutenberg)</option>
+                    </select>
+                </div>
+
+                <!-- API Key Input Form (shown when no .env key) -->
+                <div id="api-key-section" class="api-key-section" style="display: none;" role="region" aria-label="API Key Input">
+                    <p class="api-key-notice">
+                        <strong>API Key Required:</strong> To use AI simplification, please provide your own API key.
+                    </p>
+                    <label for="api-key-input">API Key:</label>
+                    <input 
+                        type="password" 
+                        id="api-key-input" 
+                        name="apiKey"
+                        placeholder="Enter your API key"
+                        aria-describedby="api-key-help"
+                    >
+                    <small id="api-key-help" class="help-text">
+                        Get a free API key from <a href="https://openrouter.ai/" target="_blank" rel="noopener">OpenRouter</a> 
+                        or <a href="https://huggingface.co/" target="_blank" rel="noopener">Hugging Face</a>
+                    </small>
+                </div>
+            </section>
+
+            <!-- Focus Profile Selector -->
+            <section class="profile-section" aria-label="Focus Profile Selection">
+                <label for="focus-profile-selector">Focus Profile:</label>
+                <select id="focus-profile-selector" aria-label="Select focus profile">
+                    <option value="light">Light</option>
+                    <option value="medium" selected>Medium (default)</option>
+                    <option value="aggressive">Aggressive</option>
+                </select>
+            </section>
+
+            <!-- Toggle Button for Original ↔ Focus Views -->
+            <section class="controls-section" aria-label="View Controls">
+                <button 
+                    id="toggle-view" 
+                    disabled 
+                    aria-label="Toggle between original and focus mode views"
+                    aria-pressed="false"
+                >
+                    Switch to Focus Mode
+                </button>
+                
+                <!-- Text-to-Speech Controls -->
+                <div id="tts-controls" class="tts-controls" style="display: none;">
+                    <button 
+                        id="tts-play" 
+                        aria-label="Read content aloud"
+                        title="Read content aloud"
+                    >
+                        ▶️ Play
+                    </button>
+                    <button 
+                        id="tts-pause" 
+                        disabled
+                        aria-label="Pause reading"
+                        title="Pause reading"
+                    >
+                        ⏸️ Pause
+                    </button>
+                    <button 
+                        id="tts-stop" 
+                        disabled
+                        aria-label="Stop reading"
+                        title="Stop reading"
+                    >
+                        ⏹️ Stop
+                    </button>
+                </div>
+            </section>
+
+            <!-- Loading Indicator with Cold-Start Warning -->
+            <section id="loading-section" class="loading-section" style="display: none;" role="status" aria-live="polite">
+                <div class="spinner" aria-hidden="true"></div>
+                <p id="loading-message">Processing...</p>
+                <p id="cold-start-warning" class="cold-start-warning" style="display: none;">
+                    ⏱️ First request may take 10-30 seconds (cold start). Subsequent requests will be faster.
+                </p>
+            </section>
+
+            <!-- Error Message Display Area -->
+            <section id="error-section" class="error-section" style="display: none;" role="alert" aria-live="assertive">
+                <div class="error-content">
+                    <span class="error-icon" aria-hidden="true">⚠️</span>
+                    <p id="error-message"></p>
+                </div>
+            </section>
+
+            <!-- Content Display Area -->
+            <section id="content-section" class="content-section" style="display: none;" aria-label="Article Content">
+                <article id="content-article">
+                    <h2 id="content-title"></h2>
+                    <div id="content-display" role="region" aria-live="polite"></div>
+                    <div id="truncation-notice" class="truncation-notice" style="display: none;" role="status">
+                        <p>📄 Note: Content was truncated to 2000 words for AI processing. Only the first portion was simplified.</p>
+                    </div>
+                </article>
+            </section>
+        </main>
+
+        <footer>
+            <p>
+                <small>
+                    Built for users with ADHD and autism. 
+                    <a href="https://github.com" target="_blank" rel="noopener">View on GitHub</a>
+                </small>
+            </p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "name": "focus-mode-accessibility-tool-frontend",
+  "version": "1.0.0",
+  "description": "Frontend for Focus Mode Accessibility Tool",
+  "scripts": {
+    "test": "node tests/test_html_structure.js && node tests/test_url_input_component.js && node tests/test_session_storage_properties.js"
+  },
+  "devDependencies": {
+    "fast-check": "^4.5.3",
+    "jsdom": "^24.0.0"
+  }
+}

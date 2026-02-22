@@ -1,0 +1,388 @@
+2026-02-21 19:49:50,284 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.7.242:5000
+2026-02-21 19:49:50,284 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-02-21 19:49:50,287 - werkzeug - INFO -  * Restarting with stat
+2026-02-21 19:49:50,713 - werkzeug - WARNING -  * Debugger is active!
+2026-02-21 19:49:50,718 - werkzeug - INFO -  * Debugger PIN: 297-681-826
+2026-02-21 19:52:59,223 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 19:52:59] "GET /health HTTP/1.1" 200 -
+2026-02-21 19:52:59,227 - __main__ - WARNING - Invalid request from 127.0.0.1: No URL provided
+2026-02-21 19:52:59,229 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 19:52:59] "[31m[1mPOST /api/simplify HTTP/1.1[0m" 400 -
+2026-02-21 19:52:59,231 - __main__ - INFO - Processing request from 127.0.0.1 for URL: https://simple.wikipedia.org/wiki/Computer
+2026-02-21 19:52:59,825 - __main__ - INFO - Successfully fetched content from 127.0.0.1 (fallback: False)
+2026-02-21 19:52:59,943 - __main__ - ERROR - Extraction failed for URL from 127.0.0.1: page_type=empty
+2026-02-21 19:52:59,943 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 19:52:59] "[31m[1mPOST /api/simplify HTTP/1.1[0m" 400 -
+2026-02-21 19:52:59,944 - __main__ - INFO - Processing request from 127.0.0.1 for URL: https://this-domain-does-not-exist-12345.com/article
+2026-02-21 19:53:00,528 - __main__ - ERROR - Fetch failed for URL from 127.0.0.1: fetch_error
+2026-02-21 19:53:00,533 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 19:53:00] "[31m[1mPOST /api/simplify HTTP/1.1[0m" 400 -
+2026-02-21 19:53:00,534 - __main__ - INFO - Processing request from 127.0.0.1 for URL: https://simple.wikipedia.org/wiki/Computer
+2026-02-21 19:53:01,035 - __main__ - INFO - Successfully fetched content from 127.0.0.1 (fallback: False)
+2026-02-21 19:53:01,138 - __main__ - ERROR - Extraction failed for URL from 127.0.0.1: page_type=empty
+2026-02-21 19:53:01,140 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 19:53:01] "[31m[1mPOST /api/simplify HTTP/1.1[0m" 400 -
+2026-02-21 19:53:01,145 - __main__ - INFO - Processing request from 127.0.0.1 for URL: https://simple.wikipedia.org/wiki/Computer
+2026-02-21 19:53:01,675 - __main__ - INFO - Successfully fetched content from 127.0.0.1 (fallback: False)
+2026-02-21 19:53:01,778 - __main__ - ERROR - Extraction failed for URL from 127.0.0.1: page_type=empty
+2026-02-21 19:53:01,778 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 19:53:01] "[31m[1mPOST /api/simplify HTTP/1.1[0m" 400 -
+2026-02-21 19:53:01,784 - __main__ - WARNING - Invalid request from 127.0.0.1: No URL provided
+2026-02-21 19:53:01,784 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 19:53:01] "[31m[1mPOST /api/simplify HTTP/1.1[0m" 400 -
+2026-02-21 19:53:43,539 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 19:53:43] "GET /health HTTP/1.1" 200 -
+2026-02-21 19:53:43,543 - __main__ - WARNING - Invalid request from 127.0.0.1: No URL provided
+2026-02-21 19:53:43,545 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 19:53:43] "[31m[1mPOST /api/simplify HTTP/1.1[0m" 400 -
+2026-02-21 19:53:43,547 - __main__ - INFO - Processing request from 127.0.0.1 for URL: https://en.wikipedia.org/wiki/Accessibility
+2026-02-21 19:53:44,104 - __main__ - INFO - Successfully fetched content from 127.0.0.1 (fallback: False)
+2026-02-21 19:53:44,264 - __main__ - ERROR - Extraction failed for URL from 127.0.0.1: page_type=empty
+2026-02-21 19:53:44,264 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 19:53:44] "[31m[1mPOST /api/simplify HTTP/1.1[0m" 400 -
+2026-02-21 19:53:44,264 - __main__ - INFO - Processing request from 127.0.0.1 for URL: https://this-domain-does-not-exist-12345.com/article
+2026-02-21 19:53:44,643 - __main__ - INFO - Successfully fetched content from 127.0.0.1 (fallback: True)
+2026-02-21 19:53:44,644 - __main__ - INFO - Successfully extracted content from 127.0.0.1 (title: Origin DNS error | this-domain-does-not-exist-1234)
+2026-02-21 19:53:44,995 - __main__ - ERROR - AI simplification failed for request from 127.0.0.1: api_error
+2026-02-21 19:53:44,995 - __main__ - INFO - Gracefully degrading to original content for 127.0.0.1
+2026-02-21 19:53:44,995 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 19:53:44] "POST /api/simplify HTTP/1.1" 200 -
+2026-02-21 19:53:44,995 - __main__ - INFO - Processing request from 127.0.0.1 for URL: https://en.wikipedia.org/wiki/Accessibility
+2026-02-21 19:53:45,528 - __main__ - INFO - Successfully fetched content from 127.0.0.1 (fallback: False)
+2026-02-21 19:53:45,665 - __main__ - ERROR - Extraction failed for URL from 127.0.0.1: page_type=empty
+2026-02-21 19:53:45,665 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 19:53:45] "[31m[1mPOST /api/simplify HTTP/1.1[0m" 400 -
+2026-02-21 19:53:45,673 - __main__ - INFO - Processing request from 127.0.0.1 for URL: https://en.wikipedia.org/wiki/Accessibility
+2026-02-21 19:53:46,196 - __main__ - INFO - Successfully fetched content from 127.0.0.1 (fallback: False)
+2026-02-21 19:53:46,357 - __main__ - ERROR - Extraction failed for URL from 127.0.0.1: page_type=empty
+2026-02-21 19:53:46,357 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 19:53:46] "[31m[1mPOST /api/simplify HTTP/1.1[0m" 400 -
+2026-02-21 19:53:46,357 - __main__ - WARNING - Invalid request from 127.0.0.1: No URL provided
+2026-02-21 19:53:46,357 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 19:53:46] "[31m[1mPOST /api/simplify HTTP/1.1[0m" 400 -
+2026-02-21 20:26:50,342 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Riyaan\\OneDrive\\Documents\\Programming\\grizzly_hack_project\\backend\\app.py', reloading
+2026-02-21 20:26:50,385 - werkzeug - INFO -  * Restarting with stat
+2026-02-21 20:51:29,007 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.7.242:5000
+2026-02-21 20:51:29,007 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-02-21 20:51:29,012 - werkzeug - INFO -  * Restarting with stat
+2026-02-21 20:51:29,381 - werkzeug - WARNING -  * Debugger is active!
+2026-02-21 20:51:29,385 - werkzeug - INFO -  * Debugger PIN: 100-921-745
+2026-02-21 20:51:53,983 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 20:51:53] "GET /health HTTP/1.1" 200 -
+2026-02-21 20:51:53,987 - __main__ - INFO - Processing request from 127.0.0.1 for URL: https://httpbin.org/html
+2026-02-21 20:51:54,346 - __main__ - INFO - Successfully fetched content from 127.0.0.1 (fallback: False)
+2026-02-21 20:51:54,348 - __main__ - INFO - Successfully extracted content from 127.0.0.1 (title: Herman Melville - Moby-Dick)
+2026-02-21 20:51:54,703 - __main__ - ERROR - AI simplification failed for request from 127.0.0.1: api_error
+2026-02-21 20:51:54,703 - __main__ - INFO - Gracefully degrading to original content for 127.0.0.1
+2026-02-21 20:51:54,703 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 20:51:54] "POST /api/simplify HTTP/1.1" 200 -
+2026-02-21 20:51:54,707 - __main__ - INFO - Processing request from 127.0.0.1 for URL: https://httpbin.org/html
+2026-02-21 20:51:55,049 - __main__ - INFO - Successfully fetched content from 127.0.0.1 (fallback: False)
+2026-02-21 20:51:55,049 - __main__ - INFO - Successfully extracted content from 127.0.0.1 (title: Herman Melville - Moby-Dick)
+2026-02-21 20:51:55,399 - __main__ - ERROR - AI simplification failed for request from 127.0.0.1: api_error
+2026-02-21 20:51:55,399 - __main__ - INFO - Gracefully degrading to original content for 127.0.0.1
+2026-02-21 20:51:55,399 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 20:51:55] "POST /api/simplify HTTP/1.1" 200 -
+2026-02-21 20:51:55,405 - __main__ - INFO - Processing request from 127.0.0.1 for URL: https://httpbin.org/html
+2026-02-21 20:51:55,728 - __main__ - INFO - Successfully fetched content from 127.0.0.1 (fallback: False)
+2026-02-21 20:51:55,729 - __main__ - INFO - Successfully extracted content from 127.0.0.1 (title: Herman Melville - Moby-Dick)
+2026-02-21 20:51:56,053 - __main__ - ERROR - AI simplification failed for request from 127.0.0.1: api_error
+2026-02-21 20:51:56,054 - __main__ - INFO - Gracefully degrading to original content for 127.0.0.1
+2026-02-21 20:51:56,054 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 20:51:56] "POST /api/simplify HTTP/1.1" 200 -
+2026-02-21 20:51:56,060 - __main__ - INFO - Processing request from 127.0.0.1 for URL: https://httpbin.org/html
+2026-02-21 20:51:57,240 - __main__ - INFO - Successfully fetched content from 127.0.0.1 (fallback: False)
+2026-02-21 20:51:57,242 - __main__ - INFO - Successfully extracted content from 127.0.0.1 (title: Herman Melville - Moby-Dick)
+2026-02-21 20:51:57,546 - __main__ - ERROR - AI simplification failed for request from 127.0.0.1: api_error
+2026-02-21 20:51:57,546 - __main__ - INFO - Gracefully degrading to original content for 127.0.0.1
+2026-02-21 20:51:57,546 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 20:51:57] "POST /api/simplify HTTP/1.1" 200 -
+2026-02-21 20:51:57,549 - __main__ - INFO - Processing request from 127.0.0.1 for URL: https://text.npr.org
+2026-02-21 20:51:58,806 - __main__ - INFO - Successfully fetched content from 127.0.0.1 (fallback: False)
+2026-02-21 20:51:58,812 - __main__ - INFO - Successfully extracted content from 127.0.0.1 (title: NPR : National Public Radio)
+2026-02-21 20:51:59,174 - __main__ - ERROR - AI simplification failed for request from 127.0.0.1: api_error
+2026-02-21 20:51:59,174 - __main__ - INFO - Gracefully degrading to original content for 127.0.0.1
+2026-02-21 20:51:59,174 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 20:51:59] "POST /api/simplify HTTP/1.1" 200 -
+2026-02-21 20:51:59,177 - __main__ - INFO - Processing request from 127.0.0.1 for URL: https://www.gutenberg.org/files/1342/1342-h/1342-h.htm
+2026-02-21 20:52:04,376 - __main__ - INFO - Successfully fetched content from 127.0.0.1 (fallback: False)
+2026-02-21 20:52:04,558 - __main__ - INFO - Successfully extracted content from 127.0.0.1 (title: Pride and prejudice | Project Gutenberg)
+2026-02-21 20:52:04,890 - __main__ - ERROR - AI simplification failed for request from 127.0.0.1: api_error
+2026-02-21 20:52:04,891 - __main__ - INFO - Gracefully degrading to original content for 127.0.0.1
+2026-02-21 20:52:04,891 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 20:52:04] "POST /api/simplify HTTP/1.1" 200 -
+2026-02-21 20:52:04,894 - __main__ - INFO - Processing request from 127.0.0.1 for URL: https://httpbin.org/html
+2026-02-21 20:52:05,263 - __main__ - INFO - Successfully fetched content from 127.0.0.1 (fallback: False)
+2026-02-21 20:52:05,263 - __main__ - INFO - Successfully extracted content from 127.0.0.1 (title: Herman Melville - Moby-Dick)
+2026-02-21 20:52:05,577 - __main__ - ERROR - AI simplification failed for request from 127.0.0.1: api_error
+2026-02-21 20:52:05,578 - __main__ - INFO - Gracefully degrading to original content for 127.0.0.1
+2026-02-21 20:52:05,578 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 20:52:05] "POST /api/simplify HTTP/1.1" 200 -
+2026-02-21 20:52:05,584 - __main__ - WARNING - Invalid request from 127.0.0.1: No URL provided
+2026-02-21 20:52:05,585 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 20:52:05] "[31m[1mPOST /api/simplify HTTP/1.1[0m" 400 -
+2026-02-21 20:52:05,588 - __main__ - INFO - Processing request from 127.0.0.1 for URL: not-a-url
+2026-02-21 20:52:05,588 - __main__ - ERROR - Fetch failed for URL from 127.0.0.1: invalid_url
+2026-02-21 20:52:05,589 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 20:52:05] "[31m[1mPOST /api/simplify HTTP/1.1[0m" 400 -
+2026-02-21 20:52:05,590 - __main__ - INFO - Processing request from 127.0.0.1 for URL: https://this-domain-does-not-exist-12345.com
+2026-02-21 20:52:08,123 - __main__ - ERROR - Fetch failed for URL from 127.0.0.1: fetch_error
+2026-02-21 20:52:08,123 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 20:52:08] "[31m[1mPOST /api/simplify HTTP/1.1[0m" 400 -
+2026-02-21 20:52:08,125 - __main__ - INFO - Processing request from 127.0.0.1 for URL: https://httpbin.org/html
+2026-02-21 20:52:08,469 - __main__ - INFO - Successfully fetched content from 127.0.0.1 (fallback: False)
+2026-02-21 20:52:08,472 - __main__ - INFO - Successfully extracted content from 127.0.0.1 (title: Herman Melville - Moby-Dick)
+2026-02-21 20:52:08,816 - __main__ - ERROR - AI simplification failed for request from 127.0.0.1: api_error
+2026-02-21 20:52:08,816 - __main__ - INFO - Gracefully degrading to original content for 127.0.0.1
+2026-02-21 20:52:08,817 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 20:52:08] "POST /api/simplify HTTP/1.1" 200 -
+2026-02-21 20:53:02,233 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 20:53:02] "GET /health HTTP/1.1" 200 -
+2026-02-21 20:53:02,238 - __main__ - INFO - Processing request from 127.0.0.1 for URL: https://httpbin.org/html
+2026-02-21 20:53:02,616 - __main__ - INFO - Successfully fetched content from 127.0.0.1 (fallback: False)
+2026-02-21 20:53:02,617 - __main__ - INFO - Successfully extracted content from 127.0.0.1 (title: Herman Melville - Moby-Dick)
+2026-02-21 20:53:02,962 - __main__ - ERROR - AI simplification failed for request from 127.0.0.1: api_error
+2026-02-21 20:53:02,963 - __main__ - INFO - Gracefully degrading to original content for 127.0.0.1
+2026-02-21 20:53:02,963 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 20:53:02] "POST /api/simplify HTTP/1.1" 200 -
+2026-02-21 20:53:02,965 - __main__ - INFO - Processing request from 127.0.0.1 for URL: https://httpbin.org/html
+2026-02-21 20:53:03,311 - __main__ - INFO - Successfully fetched content from 127.0.0.1 (fallback: False)
+2026-02-21 20:53:03,312 - __main__ - INFO - Successfully extracted content from 127.0.0.1 (title: Herman Melville - Moby-Dick)
+2026-02-21 20:53:03,620 - __main__ - ERROR - AI simplification failed for request from 127.0.0.1: api_error
+2026-02-21 20:53:03,621 - __main__ - INFO - Gracefully degrading to original content for 127.0.0.1
+2026-02-21 20:53:03,621 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 20:53:03] "POST /api/simplify HTTP/1.1" 200 -
+2026-02-21 20:53:03,627 - __main__ - INFO - Processing request from 127.0.0.1 for URL: https://httpbin.org/html
+2026-02-21 20:53:03,961 - __main__ - INFO - Successfully fetched content from 127.0.0.1 (fallback: False)
+2026-02-21 20:53:03,963 - __main__ - INFO - Successfully extracted content from 127.0.0.1 (title: Herman Melville - Moby-Dick)
+2026-02-21 20:53:04,297 - __main__ - ERROR - AI simplification failed for request from 127.0.0.1: api_error
+2026-02-21 20:53:04,297 - __main__ - INFO - Gracefully degrading to original content for 127.0.0.1
+2026-02-21 20:53:04,299 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 20:53:04] "POST /api/simplify HTTP/1.1" 200 -
+2026-02-21 20:53:04,302 - __main__ - INFO - Processing request from 127.0.0.1 for URL: https://httpbin.org/html
+2026-02-21 20:53:04,790 - __main__ - INFO - Successfully fetched content from 127.0.0.1 (fallback: False)
+2026-02-21 20:53:04,791 - __main__ - INFO - Successfully extracted content from 127.0.0.1 (title: Herman Melville - Moby-Dick)
+2026-02-21 20:53:05,143 - __main__ - ERROR - AI simplification failed for request from 127.0.0.1: api_error
+2026-02-21 20:53:05,143 - __main__ - INFO - Gracefully degrading to original content for 127.0.0.1
+2026-02-21 20:53:05,144 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 20:53:05] "POST /api/simplify HTTP/1.1" 200 -
+2026-02-21 20:53:05,152 - __main__ - INFO - Processing request from 127.0.0.1 for URL: https://text.npr.org
+2026-02-21 20:53:05,541 - __main__ - INFO - Successfully fetched content from 127.0.0.1 (fallback: False)
+2026-02-21 20:53:05,545 - __main__ - INFO - Successfully extracted content from 127.0.0.1 (title: NPR : National Public Radio)
+2026-02-21 20:53:05,978 - __main__ - ERROR - AI simplification failed for request from 127.0.0.1: api_error
+2026-02-21 20:53:05,979 - __main__ - INFO - Gracefully degrading to original content for 127.0.0.1
+2026-02-21 20:53:05,982 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 20:53:05] "POST /api/simplify HTTP/1.1" 200 -
+2026-02-21 20:53:05,990 - __main__ - INFO - Processing request from 127.0.0.1 for URL: https://www.gutenberg.org/files/1342/1342-h/1342-h.htm
+2026-02-21 20:53:11,721 - __main__ - INFO - Successfully fetched content from 127.0.0.1 (fallback: False)
+2026-02-21 20:53:11,899 - __main__ - INFO - Successfully extracted content from 127.0.0.1 (title: Pride and prejudice | Project Gutenberg)
+2026-02-21 20:53:12,222 - __main__ - ERROR - AI simplification failed for request from 127.0.0.1: api_error
+2026-02-21 20:53:12,222 - __main__ - INFO - Gracefully degrading to original content for 127.0.0.1
+2026-02-21 20:53:12,224 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 20:53:12] "POST /api/simplify HTTP/1.1" 200 -
+2026-02-21 20:53:12,233 - __main__ - INFO - Processing request from 127.0.0.1 for URL: https://httpbin.org/html
+2026-02-21 20:53:12,743 - __main__ - INFO - Successfully fetched content from 127.0.0.1 (fallback: False)
+2026-02-21 20:53:12,744 - __main__ - INFO - Successfully extracted content from 127.0.0.1 (title: Herman Melville - Moby-Dick)
+2026-02-21 20:53:13,068 - __main__ - ERROR - AI simplification failed for request from 127.0.0.1: api_error
+2026-02-21 20:53:13,068 - __main__ - INFO - Gracefully degrading to original content for 127.0.0.1
+2026-02-21 20:53:13,070 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 20:53:13] "POST /api/simplify HTTP/1.1" 200 -
+2026-02-21 20:53:13,075 - __main__ - WARNING - Invalid request from 127.0.0.1: No URL provided
+2026-02-21 20:53:13,075 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 20:53:13] "[31m[1mPOST /api/simplify HTTP/1.1[0m" 400 -
+2026-02-21 20:53:13,077 - __main__ - INFO - Processing request from 127.0.0.1 for URL: not-a-url
+2026-02-21 20:53:13,077 - __main__ - ERROR - Fetch failed for URL from 127.0.0.1: invalid_url
+2026-02-21 20:53:13,079 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 20:53:13] "[31m[1mPOST /api/simplify HTTP/1.1[0m" 400 -
+2026-02-21 20:53:13,082 - __main__ - INFO - Processing request from 127.0.0.1 for URL: https://this-domain-does-not-exist-12345.com
+2026-02-21 20:53:13,485 - __main__ - ERROR - Fetch failed for URL from 127.0.0.1: fetch_error
+2026-02-21 20:53:13,486 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 20:53:13] "[31m[1mPOST /api/simplify HTTP/1.1[0m" 400 -
+2026-02-21 20:53:13,492 - __main__ - INFO - Processing request from 127.0.0.1 for URL: https://httpbin.org/html
+2026-02-21 20:53:13,815 - __main__ - INFO - Successfully fetched content from 127.0.0.1 (fallback: False)
+2026-02-21 20:53:13,817 - __main__ - INFO - Successfully extracted content from 127.0.0.1 (title: Herman Melville - Moby-Dick)
+2026-02-21 20:53:14,145 - __main__ - ERROR - AI simplification failed for request from 127.0.0.1: api_error
+2026-02-21 20:53:14,145 - __main__ - INFO - Gracefully degrading to original content for 127.0.0.1
+2026-02-21 20:53:14,145 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 20:53:14] "POST /api/simplify HTTP/1.1" 200 -
+2026-02-21 21:08:16,169 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.7.242:5000
+2026-02-21 21:08:16,170 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-02-21 21:08:16,172 - werkzeug - INFO -  * Restarting with stat
+2026-02-21 21:08:16,537 - werkzeug - WARNING -  * Debugger is active!
+2026-02-21 21:08:16,540 - werkzeug - INFO -  * Debugger PIN: 100-921-745
+2026-02-21 21:09:37,863 - __main__ - INFO - Processing request from 127.0.0.1 for URL: https://httpbin.org/html
+2026-02-21 21:09:38,333 - __main__ - INFO - Successfully fetched content from 127.0.0.1 (fallback: False)
+2026-02-21 21:09:38,334 - __main__ - INFO - Successfully extracted content from 127.0.0.1 (title: Herman Melville - Moby-Dick)
+2026-02-21 21:09:38,700 - __main__ - ERROR - AI simplification failed for request from 127.0.0.1: api_error
+2026-02-21 21:09:38,700 - __main__ - INFO - Gracefully degrading to original content for 127.0.0.1
+2026-02-21 21:09:38,701 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 21:09:38] "POST /api/simplify HTTP/1.1" 200 -
+2026-02-21 23:14:31,321 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.7.242:5000
+2026-02-21 23:14:31,321 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-02-21 23:14:31,322 - werkzeug - INFO -  * Restarting with stat
+2026-02-21 23:14:31,685 - werkzeug - WARNING -  * Debugger is active!
+2026-02-21 23:14:31,689 - werkzeug - INFO -  * Debugger PIN: 100-921-745
+2026-02-21 23:16:36,408 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 23:16:36] "[33mGET / HTTP/1.1[0m" 404 -
+2026-02-21 23:16:47,624 - werkzeug - INFO - 192.168.7.242 - - [21/Feb/2026 23:16:47] "[33mGET / HTTP/1.1[0m" 404 -
+2026-02-21 23:18:36,880 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Riyaan\\OneDrive\\Documents\\Programming\\grizzly_hack_project\\backend\\app.py', reloading
+2026-02-21 23:18:36,947 - werkzeug - INFO -  * Restarting with stat
+2026-02-21 23:18:37,383 - werkzeug - WARNING -  * Debugger is active!
+2026-02-21 23:18:37,388 - werkzeug - INFO -  * Debugger PIN: 100-921-745
+2026-02-21 23:18:54,179 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.7.242:5000
+2026-02-21 23:18:54,179 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-02-21 23:18:54,181 - werkzeug - INFO -  * Restarting with stat
+2026-02-21 23:18:54,538 - werkzeug - WARNING -  * Debugger is active!
+2026-02-21 23:18:54,542 - werkzeug - INFO -  * Debugger PIN: 100-921-745
+2026-02-21 23:18:55,573 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 23:18:55] "GET / HTTP/1.1" 200 -
+2026-02-21 23:26:10,124 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 23:26:10] "OPTIONS /api/simplify HTTP/1.1" 200 -
+2026-02-21 23:26:19,862 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 23:26:19] "OPTIONS /api/simplify HTTP/1.1" 200 -
+2026-02-21 23:26:27,379 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 23:26:27] "OPTIONS /api/simplify HTTP/1.1" 200 -
+2026-02-21 23:26:32,421 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 23:26:32] "OPTIONS /api/simplify HTTP/1.1" 200 -
+2026-02-21 23:29:00,037 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 23:29:00] "OPTIONS /api/simplify HTTP/1.1" 200 -
+2026-02-21 23:29:04,733 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 23:29:04] "OPTIONS /api/simplify HTTP/1.1" 200 -
+2026-02-21 23:29:12,508 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 23:29:12] "OPTIONS /api/simplify HTTP/1.1" 200 -
+2026-02-21 23:29:14,845 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 23:29:14] "OPTIONS /api/simplify HTTP/1.1" 200 -
+2026-02-21 23:31:13,050 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 23:31:13] "OPTIONS /api/simplify HTTP/1.1" 200 -
+2026-02-21 23:31:13,314 - __main__ - INFO - Processing request from 127.0.0.1 for URL: https://httpbin.org/html
+2026-02-21 23:31:13,665 - __main__ - INFO - Successfully fetched content from 127.0.0.1 (fallback: False)
+2026-02-21 23:31:13,668 - __main__ - INFO - Successfully extracted content from 127.0.0.1 (title: Herman Melville - Moby-Dick)
+2026-02-21 23:31:13,994 - __main__ - ERROR - AI simplification failed for request from 127.0.0.1: api_error
+2026-02-21 23:31:13,994 - __main__ - INFO - Gracefully degrading to original content for 127.0.0.1
+2026-02-21 23:31:13,994 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 23:31:13] "POST /api/simplify HTTP/1.1" 200 -
+2026-02-21 23:31:21,206 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 23:31:21] "OPTIONS /api/simplify HTTP/1.1" 200 -
+2026-02-21 23:31:21,520 - __main__ - INFO - Processing request from 127.0.0.1 for URL: https://en.wikipedia.org/wiki/Liverpool_F.C.
+2026-02-21 23:31:22,103 - __main__ - INFO - Successfully fetched content from 127.0.0.1 (fallback: False)
+2026-02-21 23:31:22,559 - __main__ - ERROR - Extraction failed for URL from 127.0.0.1: page_type=empty
+2026-02-21 23:31:22,559 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 23:31:22] "[31m[1mPOST /api/simplify HTTP/1.1[0m" 400 -
+2026-02-21 23:33:09,594 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 23:33:09] "OPTIONS /api/simplify HTTP/1.1" 200 -
+2026-02-21 23:33:09,841 - __main__ - INFO - Processing request from 127.0.0.1 for URL: https://en.wikipedia.org/wiki/New_York_Red_Bulls
+2026-02-21 23:33:10,427 - __main__ - INFO - Successfully fetched content from 127.0.0.1 (fallback: False)
+2026-02-21 23:33:10,901 - __main__ - ERROR - Extraction failed for URL from 127.0.0.1: page_type=empty
+2026-02-21 23:33:10,901 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 23:33:10] "[31m[1mPOST /api/simplify HTTP/1.1[0m" 400 -
+2026-02-21 23:35:10,840 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 23:35:10] "OPTIONS /api/simplify HTTP/1.1" 200 -
+2026-02-21 23:35:11,104 - __main__ - INFO - Processing request from 127.0.0.1 for URL: https://www.gutenberg.org/files/1342/1342-h/1342-h.htm
+2026-02-21 23:35:11,668 - __main__ - INFO - Successfully fetched content from 127.0.0.1 (fallback: False)
+2026-02-21 23:35:11,865 - __main__ - INFO - Successfully extracted content from 127.0.0.1 (title: Pride and prejudice | Project Gutenberg)
+2026-02-21 23:35:12,272 - __main__ - ERROR - AI simplification failed for request from 127.0.0.1: api_error
+2026-02-21 23:35:12,272 - __main__ - INFO - Gracefully degrading to original content for 127.0.0.1
+2026-02-21 23:35:12,272 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 23:35:12] "POST /api/simplify HTTP/1.1" 200 -
+2026-02-21 23:35:22,590 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Riyaan\\OneDrive\\Documents\\Programming\\grizzly_hack_project\\backend\\services\\content_extractor.py', reloading
+2026-02-21 23:35:22,698 - werkzeug - INFO -  * Restarting with stat
+2026-02-21 23:35:23,208 - werkzeug - WARNING -  * Debugger is active!
+2026-02-21 23:35:23,213 - werkzeug - INFO -  * Debugger PIN: 100-921-745
+2026-02-21 23:35:34,414 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Riyaan\\OneDrive\\Documents\\Programming\\grizzly_hack_project\\backend\\services\\content_extractor.py', reloading
+2026-02-21 23:35:34,448 - werkzeug - INFO -  * Restarting with stat
+2026-02-21 23:35:34,833 - werkzeug - WARNING -  * Debugger is active!
+2026-02-21 23:35:34,835 - werkzeug - INFO -  * Debugger PIN: 100-921-745
+2026-02-21 23:35:55,864 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.7.242:5000
+2026-02-21 23:35:55,865 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-02-21 23:35:55,866 - werkzeug - INFO -  * Restarting with stat
+2026-02-21 23:35:56,210 - werkzeug - WARNING -  * Debugger is active!
+2026-02-21 23:35:56,213 - werkzeug - INFO -  * Debugger PIN: 100-921-745
+2026-02-21 23:36:12,890 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 23:36:12] "OPTIONS /api/simplify HTTP/1.1" 200 -
+2026-02-21 23:36:13,137 - __main__ - INFO - Processing request from 127.0.0.1 for URL: https://httpbin.org/html
+2026-02-21 23:36:13,910 - __main__ - INFO - Successfully fetched content from 127.0.0.1 (fallback: False)
+2026-02-21 23:36:13,911 - __main__ - INFO - Successfully extracted content from 127.0.0.1 (title: Herman Melville - Moby-Dick)
+2026-02-21 23:36:14,256 - __main__ - ERROR - AI simplification failed for request from 127.0.0.1: api_error
+2026-02-21 23:36:14,257 - __main__ - INFO - Gracefully degrading to original content for 127.0.0.1
+2026-02-21 23:36:14,257 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 23:36:14] "POST /api/simplify HTTP/1.1" 200 -
+2026-02-21 23:36:19,958 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 23:36:19] "OPTIONS /api/simplify HTTP/1.1" 200 -
+2026-02-21 23:36:20,277 - __main__ - INFO - Processing request from 127.0.0.1 for URL: https://en.wikipedia.org/wiki/New_York_Red_Bulls
+2026-02-21 23:36:20,877 - __main__ - INFO - Successfully fetched content from 127.0.0.1 (fallback: False)
+2026-02-21 23:36:21,341 - __main__ - ERROR - Extraction failed for URL from 127.0.0.1: page_type=empty
+2026-02-21 23:36:21,342 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 23:36:21] "[31m[1mPOST /api/simplify HTTP/1.1[0m" 400 -
+2026-02-21 23:40:23,834 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Riyaan\\OneDrive\\Documents\\Programming\\grizzly_hack_project\\backend\\test_wikipedia.py', reloading
+2026-02-21 23:40:23,886 - werkzeug - INFO -  * Restarting with stat
+2026-02-21 23:40:24,273 - werkzeug - WARNING -  * Debugger is active!
+2026-02-21 23:40:24,276 - werkzeug - INFO -  * Debugger PIN: 100-921-745
+2026-02-21 23:47:33,752 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 23:47:33] "OPTIONS /api/simplify HTTP/1.1" 200 -
+2026-02-21 23:47:34,000 - __main__ - INFO - Processing request from 127.0.0.1 for URL: https://en.wikipedia.org/wiki/New_York_Red_Bulls
+2026-02-21 23:47:34,794 - __main__ - INFO - Successfully fetched content from 127.0.0.1 (fallback: False)
+2026-02-21 23:47:35,291 - __main__ - ERROR - Extraction failed for URL from 127.0.0.1: page_type=empty
+2026-02-21 23:47:35,291 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 23:47:35] "[31m[1mPOST /api/simplify HTTP/1.1[0m" 400 -
+2026-02-21 23:47:41,767 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 23:47:41] "OPTIONS /api/simplify HTTP/1.1" 200 -
+2026-02-21 23:47:42,074 - __main__ - INFO - Processing request from 127.0.0.1 for URL: https://text.npr.org
+2026-02-21 23:47:43,181 - __main__ - INFO - Successfully fetched content from 127.0.0.1 (fallback: False)
+2026-02-21 23:47:43,184 - __main__ - INFO - Successfully extracted content from 127.0.0.1 (title: NPR : National Public Radio)
+2026-02-21 23:47:43,545 - __main__ - ERROR - AI simplification failed for request from 127.0.0.1: api_error
+2026-02-21 23:47:43,545 - __main__ - INFO - Gracefully degrading to original content for 127.0.0.1
+2026-02-21 23:47:43,545 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 23:47:43] "POST /api/simplify HTTP/1.1" 200 -
+2026-02-21 23:49:06,692 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.7.242:5000
+2026-02-21 23:49:06,692 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-02-21 23:49:06,698 - werkzeug - INFO -  * Restarting with stat
+2026-02-21 23:49:07,030 - werkzeug - WARNING -  * Debugger is active!
+2026-02-21 23:49:07,034 - werkzeug - INFO -  * Debugger PIN: 297-681-826
+2026-02-21 23:50:04,268 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 23:50:04] "OPTIONS /api/simplify HTTP/1.1" 200 -
+2026-02-21 23:50:04,534 - __main__ - INFO - Processing request from 127.0.0.1 for URL: https://text.npr.org
+2026-02-21 23:50:04,929 - __main__ - INFO - Successfully fetched content from 127.0.0.1 (fallback: False)
+2026-02-21 23:50:04,935 - __main__ - INFO - Successfully extracted content from 127.0.0.1 (title: NPR : National Public Radio)
+2026-02-21 23:50:05,366 - __main__ - ERROR - AI simplification failed for request from 127.0.0.1: api_error
+2026-02-21 23:50:05,366 - __main__ - INFO - Gracefully degrading to original content for 127.0.0.1
+2026-02-21 23:50:05,368 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 23:50:05] "POST /api/simplify HTTP/1.1" 200 -
+2026-02-21 23:50:18,910 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 23:50:18] "OPTIONS /api/simplify HTTP/1.1" 200 -
+2026-02-21 23:50:19,217 - __main__ - INFO - Processing request from 127.0.0.1 for URL: https://en.wikipedia.org/wiki/New_York_Red_Bulls
+2026-02-21 23:50:19,823 - __main__ - INFO - Successfully fetched content from 127.0.0.1 (fallback: False)
+2026-02-21 23:50:20,313 - __main__ - ERROR - Extraction failed for URL from 127.0.0.1: page_type=empty
+2026-02-21 23:50:20,313 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 23:50:20] "[31m[1mPOST /api/simplify HTTP/1.1[0m" 400 -
+2026-02-21 23:52:20,019 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Riyaan\\OneDrive\\Documents\\Programming\\grizzly_hack_project\\backend\\services\\content_extractor.py', reloading
+2026-02-21 23:52:20,075 - werkzeug - INFO -  * Restarting with stat
+2026-02-21 23:52:20,467 - werkzeug - WARNING -  * Debugger is active!
+2026-02-21 23:52:20,473 - werkzeug - INFO -  * Debugger PIN: 297-681-826
+2026-02-21 23:53:09,637 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Riyaan\\OneDrive\\Documents\\Programming\\grizzly_hack_project\\backend\\services\\content_extractor.py', reloading
+2026-02-21 23:53:09,673 - werkzeug - INFO -  * Restarting with stat
+2026-02-21 23:53:10,035 - werkzeug - WARNING -  * Debugger is active!
+2026-02-21 23:53:10,040 - werkzeug - INFO -  * Debugger PIN: 297-681-826
+2026-02-21 23:53:47,126 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.7.242:5000
+2026-02-21 23:53:47,127 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-02-21 23:53:47,131 - werkzeug - INFO -  * Restarting with stat
+2026-02-21 23:53:47,487 - werkzeug - WARNING -  * Debugger is active!
+2026-02-21 23:53:47,493 - werkzeug - INFO -  * Debugger PIN: 297-681-826
+2026-02-21 23:53:58,912 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 23:53:58] "OPTIONS /api/simplify HTTP/1.1" 200 -
+2026-02-21 23:53:59,160 - __main__ - INFO - Processing request from 127.0.0.1 for URL: https://text.npr.org
+2026-02-21 23:53:59,552 - __main__ - INFO - Successfully fetched content from 127.0.0.1 (fallback: False)
+2026-02-21 23:53:59,558 - __main__ - INFO - Successfully extracted content from 127.0.0.1 (title: NPR : National Public Radio)
+2026-02-21 23:53:59,919 - __main__ - ERROR - AI simplification failed for request from 127.0.0.1: api_error
+2026-02-21 23:53:59,920 - __main__ - INFO - Gracefully degrading to original content for 127.0.0.1
+2026-02-21 23:53:59,920 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 23:53:59] "POST /api/simplify HTTP/1.1" 200 -
+2026-02-21 23:54:06,573 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 23:54:06] "OPTIONS /api/simplify HTTP/1.1" 200 -
+2026-02-21 23:54:06,887 - __main__ - INFO - Processing request from 127.0.0.1 for URL: https://www.nytimes.com/
+2026-02-21 23:54:07,527 - __main__ - INFO - Successfully fetched content from 127.0.0.1 (fallback: False)
+2026-02-21 23:54:07,605 - __main__ - INFO - Successfully extracted content from 127.0.0.1 (title: The New York Times - Breaking News, US News, World)
+2026-02-21 23:54:07,905 - __main__ - ERROR - AI simplification failed for request from 127.0.0.1: api_error
+2026-02-21 23:54:07,905 - __main__ - INFO - Gracefully degrading to original content for 127.0.0.1
+2026-02-21 23:54:07,906 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 23:54:07] "POST /api/simplify HTTP/1.1" 200 -
+2026-02-21 23:54:18,543 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 23:54:18] "OPTIONS /api/simplify HTTP/1.1" 200 -
+2026-02-21 23:54:18,852 - __main__ - INFO - Processing request from 127.0.0.1 for URL: https://en.wikipedia.org/wiki/New_York_Red_Bulls
+2026-02-21 23:54:19,481 - __main__ - INFO - Successfully fetched content from 127.0.0.1 (fallback: False)
+2026-02-21 23:54:20,034 - __main__ - INFO - Successfully extracted content from 127.0.0.1 (title: New York Red Bulls - Wikipedia)
+2026-02-21 23:54:20,373 - __main__ - ERROR - AI simplification failed for request from 127.0.0.1: api_error
+2026-02-21 23:54:20,373 - __main__ - INFO - Gracefully degrading to original content for 127.0.0.1
+2026-02-21 23:54:20,373 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 23:54:20] "POST /api/simplify HTTP/1.1" 200 -
+2026-02-21 23:55:24,255 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 23:55:24] "OPTIONS /api/simplify HTTP/1.1" 200 -
+2026-02-21 23:55:24,517 - __main__ - INFO - Processing request from 127.0.0.1 for URL: https://www.mufgamericas.com/
+2026-02-21 23:55:25,049 - __main__ - INFO - Successfully fetched content from 127.0.0.1 (fallback: False)
+2026-02-21 23:55:25,065 - __main__ - INFO - Successfully extracted content from 127.0.0.1 (title: Homepage | MUFG Americas)
+2026-02-21 23:55:25,441 - __main__ - ERROR - AI simplification failed for request from 127.0.0.1: api_error
+2026-02-21 23:55:25,441 - __main__ - INFO - Gracefully degrading to original content for 127.0.0.1
+2026-02-21 23:55:25,441 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 23:55:25] "POST /api/simplify HTTP/1.1" 200 -
+2026-02-21 23:55:30,279 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 23:55:30] "OPTIONS /api/simplify HTTP/1.1" 200 -
+2026-02-21 23:55:30,595 - __main__ - INFO - Processing request from 127.0.0.1 for URL: https://www.mufgamericas.com/
+2026-02-21 23:55:31,166 - __main__ - INFO - Successfully fetched content from 127.0.0.1 (fallback: False)
+2026-02-21 23:55:31,183 - __main__ - INFO - Successfully extracted content from 127.0.0.1 (title: Homepage | MUFG Americas)
+2026-02-21 23:55:31,486 - __main__ - ERROR - AI simplification failed for request from 127.0.0.1: api_error
+2026-02-21 23:55:31,486 - __main__ - INFO - Gracefully degrading to original content for 127.0.0.1
+2026-02-21 23:55:31,486 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 23:55:31] "POST /api/simplify HTTP/1.1" 200 -
+2026-02-22 00:03:00,765 - werkzeug - INFO - 127.0.0.1 - - [22/Feb/2026 00:03:00] "OPTIONS /api/simplify HTTP/1.1" 200 -
+2026-02-22 00:03:01,029 - __main__ - INFO - Processing request from 127.0.0.1 for URL: https://en.wikipedia.org/wiki/Liverpool
+2026-02-22 00:03:01,727 - __main__ - INFO - Successfully fetched content from 127.0.0.1 (fallback: False)
+2026-02-22 00:03:02,787 - __main__ - INFO - Successfully extracted content from 127.0.0.1 (title: Liverpool - Wikipedia)
+2026-02-22 00:03:03,171 - __main__ - ERROR - AI simplification failed for request from 127.0.0.1: api_error
+2026-02-22 00:03:03,171 - __main__ - INFO - Gracefully degrading to original content for 127.0.0.1
+2026-02-22 00:03:03,172 - werkzeug - INFO - 127.0.0.1 - - [22/Feb/2026 00:03:03] "POST /api/simplify HTTP/1.1" 200 -
+2026-02-22 07:08:24,494 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.7.242:5000
+2026-02-22 07:08:24,494 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-02-22 07:08:24,521 - werkzeug - INFO -  * Restarting with stat
+2026-02-22 07:08:24,895 - werkzeug - WARNING -  * Debugger is active!
+2026-02-22 07:08:24,902 - werkzeug - INFO -  * Debugger PIN: 297-681-826
+2026-02-22 07:09:39,898 - werkzeug - INFO - 127.0.0.1 - - [22/Feb/2026 07:09:39] "OPTIONS /api/simplify HTTP/1.1" 200 -
+2026-02-22 07:09:40,159 - __main__ - INFO - Processing request from 127.0.0.1 for URL: https://text.npr.org
+2026-02-22 07:09:40,668 - __main__ - INFO - Successfully fetched content from 127.0.0.1 (fallback: False)
+2026-02-22 07:09:40,673 - __main__ - INFO - Successfully extracted content from 127.0.0.1 (title: NPR : National Public Radio)
+2026-02-22 07:09:41,043 - __main__ - ERROR - AI simplification failed for request from 127.0.0.1: api_error
+2026-02-22 07:09:41,048 - __main__ - INFO - Gracefully degrading to original content for 127.0.0.1
+2026-02-22 07:09:41,048 - werkzeug - INFO - 127.0.0.1 - - [22/Feb/2026 07:09:41] "POST /api/simplify HTTP/1.1" 200 -
+2026-02-22 07:10:00,963 - werkzeug - INFO - 127.0.0.1 - - [22/Feb/2026 07:10:00] "OPTIONS /api/simplify HTTP/1.1" 200 -
+2026-02-22 07:10:01,279 - __main__ - INFO - Processing request from 127.0.0.1 for URL: https://en.wikipedia.org/wiki/New_York_Red_Bulls
+2026-02-22 07:10:01,894 - __main__ - INFO - Successfully fetched content from 127.0.0.1 (fallback: False)
+2026-02-22 07:10:02,470 - __main__ - INFO - Successfully extracted content from 127.0.0.1 (title: New York Red Bulls - Wikipedia)
+2026-02-22 07:10:02,830 - __main__ - ERROR - AI simplification failed for request from 127.0.0.1: api_error
+2026-02-22 07:10:02,830 - __main__ - INFO - Gracefully degrading to original content for 127.0.0.1
+2026-02-22 07:10:02,831 - werkzeug - INFO - 127.0.0.1 - - [22/Feb/2026 07:10:02] "POST /api/simplify HTTP/1.1" 200 -
